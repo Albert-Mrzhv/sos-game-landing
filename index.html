@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS - Survive At All Costs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <a href="#" class="header__logo">
+                <img class="header__logo-img" src="images-icons/header/logo.png" alt="SOS logo">
+            </a>
+
+            <!-- Navigation -->
+            <nav class="header__nav" id="mainNav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#main" class="nav__link active">MAIN</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">ABOUT</a></li>
+                    <li class="nav__item"><a href="#features" class="nav__link">GAME FEATURES</a></li>
+                    <li class="nav__item"><a href="#requirements" class="nav__link">SYSTEM REQUIREMENTS</a></li>
+                    <li class="nav__item"><a href="#quotes" class="nav__link">QUOTES</a></li>
+                </ul>
+            </nav>
+
+            <!-- Right section -->
+            <div class="header__right">
+                <!-- Language Selector -->
+                <div class="lang-selector" id="langSelector">
+                    <button class="lang-selector__btn" id="langBtn" aria-expanded="false">
+                        <span class="lang-selector__current">ENG</span>
+                        <img class="lang-selector__arrow" src="images-icons/header/Vector 2.svg" alt="">
+                    </button>
+                    <ul class="lang-selector__dropdown" id="langDropdown">
+                        <li class="lang-selector__option" data-lang="RUS">RUS</li>
+                        <li class="lang-selector__option" data-lang="FRA">FRA</li>
+                        <li class="lang-selector__option" data-lang="DEU">DEU</li>
+                    </ul>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="header__socials">
+                    <a href="#" class="social__link" aria-label="Xbox Store">
+                        <img src="images-icons/header/xbox icon.svg" alt="Xbox">
+                    </a>
+                    <a href="#" class="social__link" aria-label="Steam Store">
+                        <img src="images-icons/header/steam icon.svg" alt="Steam">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hamburger (mobile) -->
+            <button class="header__burger" id="burgerBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Parallax background artwork -->
+        <div class="hero-bg" aria-hidden="true"></div> 
+
+        <div class="hero__content">
+            <h1 class="hero__title">SURVIVE AT ALL COSTS</h1>
+            <p class="hero__subtitle">EXPERIENCE NEW SOCIAL BATTLE ROYALE GAME</p>
+            <a href="#" class="hero__btn">
+                <span class="hero__btn-text">Buy now on Steam</span>
+                <span class="hero__btn-divider"></span>
+                <span class="hero__btn-price">$14.99</span>
+            </a>
+        </div>
+
+        <div class="hero__scroll">
+            <span class="hero__scroll-text">THE STORY</span>
+            <img class="hero__scroll-icon" src="images-icons/header/scroll down.svg" alt="">
+        </div>
+
+    </section>
+
+    <main>
+        <!-- About / What is SOS -->
+        <section class="about" id="about">
+            <div class="about__inner">
+                <div class="about__content">
+                    <p class="about__label">What is SOS?</p>
+                    <h2 class="about__title">Social battle royale game</h2>
+                    <div class="about__line" aria-hidden="true"></div>
+                    <div class="about__paragraphs">
+                        <p>Each round, <strong>you</strong> and <strong>15</strong> other contestants compete to
+                            escape a deadly island filled with monsters. The trick is: <strong>three</strong>
+                            people can survive. Will you run solo or form friendships with others to escape?</p>
+                        <p>Making the right decisions could be the difference between
+                            <span class="about__underline">life and death</span>.</p>
+                    </div>
+                </div>
+
+                <div class="about__gallery">
+                    <div class="about__slide about__slide--1"></div>
+                    <div class="about__slide about__slide--2"></div>
+                    <div class="about__slide about__slide--3"></div>
+                    <div class="about__dots">
+                        <button class="about-dot about-dot--active" aria-label="Slide 1"></button>
+                        <button class="about-dot" aria-label="Slide 2"></button>
+                        <button class="about-dot" aria-label="Slide 3"></button>
+                    </div>
+
+                    <button class="about__next" aria-label="Switch screenshot">
+                        <img src="images-icons/main/section-1/switch.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features / What's so special -->
+        <section class="features" id="features">
+            <div class="features__inner">
+                <div class="features__content">
+                    <p class="features__label">What's so special?</p>
+                    <h2 class="features__title">Features</h2>
+
+                    <ol class="features__list">
+                        <li class="feature feature--active">
+                            <img class="feature__dot" src="images-icons/main/section-2/Ellipse%201.svg" alt="">
+                            <div class="feature__body">
+                                <h3 class="feature__name">Survive at all costs</h3>
+                                <p class="feature__text">You have 30 minutes to find a relic, signal for extraction,
+                                    and grab one of three spots on the rescue chopper.</p>
+                            </div>
+                        </li>
+                        <li class="feature">
+                            <img class="feature__dot" src="images-icons/main/section-2/Ellipse.svg" alt="">
+                            <div class="feature__body">
+                                <h3 class="feature__name">Create allies and enemies</h3>
+                            </div>
+                        </li>
+                        <li class="feature">
+                            <img class="feature__dot" src="images-icons/main/section-2/Ellipse.svg" alt="">
+                            <div class="feature__body">
+                                <h3 class="feature__name">Impress the audience</h3>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- System requirements -->
+        <section class="requirements" id="requirements">
+            <div class="requirements__inner">
+                <div class="requirements__head">
+                    <p class="requirements__label">Can my computer run this game?</p>
+                    <h2 class="requirements__title">System requirements</h2>
+                </div>
+
+                <div class="requirements__table">
+                    <div class="req-cell">
+                        <h3 class="req-cell__name">OS:</h3>
+                        <p class="req-cell__text">Windows 7 64-bit only<br>(No OSX support at this time)</p>
+                    </div>
+                    <div class="req-cell">
+                        <h3 class="req-cell__name">Processor:</h3>
+                        <p class="req-cell__text">Intel Core 2 Duo @ 2.4 GHZ or<br>AMD Athlon X2 @ 2.8GHZ</p>
+                    </div>
+                    <div class="req-cell">
+                        <h3 class="req-cell__name">Memory:</h3>
+                        <p class="req-cell__text">8 GB RAM</p>
+                    </div>
+                    <div class="req-cell">
+                        <h3 class="req-cell__name">Storage:</h3>
+                        <p class="req-cell__text">8 GB available space</p>
+                    </div>
+                    <div class="req-cell req-cell--wide">
+                        <h3 class="req-cell__name">Graphics:</h3>
+                        <p class="req-cell__text">NVIDIA GeForce GTX 660 2GB or<br>AMD Radeon HD 7850 2GB DirectX11<br class="br-m">
+                            (Shader Model 5)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Press quotes -->
+        <section class="quotes" id="quotes">
+            <div class="quotes__bg" aria-hidden="true"></div>
+            <div class="quotes__inner">
+                <div class="quotes__content">
+                    <p class="quotes__label">What people think?</p>
+                    <h2 class="quotes__title">Press quotes</h2>
+                    <p class="quotes__text">Our goal is to create a product and service that you're satisfied with
+                        and use it every day. This is why we're constantly working on our services to make it better
+                        every day and really listen to what our users has to say.</p>
+                    <a href="#" class="quotes__btn">Read more testimonials</a>
+                </div>
+
+                <article class="quote quote--1">
+                    <div class="quote__head">
+                        <span class="quote__avatar">
+                            <img src="images-icons/main/section-4/image%208.jpg" alt="Evan Lahti">
+                        </span>
+                        <div class="quote__who">
+                            <h3 class="quote__name">Evan Lahti</h3>
+                            <p class="quote__source">PC Gamer</p>
+                        </div>
+                        <svg class="quote__twitter" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                            <path d="M14.35 3.32c.02.15.02.3.02.45 0 4.53-3.45 9.76-9.76 9.76-1.94 0-3.74-.57-5.26-1.54.27.03.53.04.81.04 1.59 0 3.05-.54 4.21-1.46a3.43 3.43 0 0 1-3.2-2.38c.21.04.42.06.64.06.31 0 .61-.04.89-.11a3.43 3.43 0 0 1-2.75-3.36v-.04c.46.25 1 .41 1.56.43A3.43 3.43 0 0 1 1.1 1.86c0-.63.17-1.21.46-1.72a9.74 9.74 0 0 0 7.08 3.59 3.42 3.42 0 0 1 5.83-3.12 6.85 6.85 0 0 0 2.18-.83 3.44 3.44 0 0 1-1.51 1.9 6.84 6.84 0 0 0 1.97-.54 6.9 6.9 0 0 1-1.76 1.83z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <p class="quote__body">“One of my gaming highlights of the year.”</p>
+                    <p class="quote__date">October 18, 2018</p>
+                </article>
+
+                <article class="quote quote--2">
+                    <div class="quote__head">
+                        <span class="quote__avatar">
+                            <img src="images-icons/main/section-4/image.jpg" alt="Jada Griffin">
+                        </span>
+                        <div class="quote__who">
+                            <h3 class="quote__name">Jada Griffin</h3>
+                            <p class="quote__source">Nerdreactor</p>
+                        </div>
+                        <svg class="quote__twitter" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                            <path d="M14.35 3.32c.02.15.02.3.02.45 0 4.53-3.45 9.76-9.76 9.76-1.94 0-3.74-.57-5.26-1.54.27.03.53.04.81.04 1.59 0 3.05-.54 4.21-1.46a3.43 3.43 0 0 1-3.2-2.38c.21.04.42.06.64.06.31 0 .61-.04.89-.11a3.43 3.43 0 0 1-2.75-3.36v-.04c.46.25 1 .41 1.56.43A3.43 3.43 0 0 1 1.1 1.86c0-.63.17-1.21.46-1.72a9.74 9.74 0 0 0 7.08 3.59 3.42 3.42 0 0 1 5.83-3.12 6.85 6.85 0 0 0 2.18-.83 3.44 3.44 0 0 1-1.51 1.9 6.84 6.84 0 0 0 1.97-.54 6.9 6.9 0 0 1-1.76 1.83z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <p class="quote__body">“The next big thing in the world of streaming and survival games.”</p>
+                    <p class="quote__date">December 21, 2018</p>
+                </article>
+
+                <article class="quote quote--3">
+                    <div class="quote__head">
+                        <span class="quote__avatar">
+                            <img src="images-icons/main/section-4/image%20(1).jpg" alt="Aaron Williams">
+                        </span>
+                        <div class="quote__who">
+                            <h3 class="quote__name">Aaron Williams</h3>
+                            <p class="quote__source">Uproxx</p>
+                        </div>
+                        <svg class="quote__twitter" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                            <path d="M14.35 3.32c.02.15.02.3.02.45 0 4.53-3.45 9.76-9.76 9.76-1.94 0-3.74-.57-5.26-1.54.27.03.53.04.81.04 1.59 0 3.05-.54 4.21-1.46a3.43 3.43 0 0 1-3.2-2.38c.21.04.42.06.64.06.31 0 .61-.04.89-.11a3.43 3.43 0 0 1-2.75-3.36v-.04c.46.25 1 .41 1.56.43A3.43 3.43 0 0 1 1.1 1.86c0-.63.17-1.21.46-1.72a9.74 9.74 0 0 0 7.08 3.59 3.42 3.42 0 0 1 5.83-3.12 6.85 6.85 0 0 0 2.18-.83 3.44 3.44 0 0 1-1.51 1.9 6.84 6.84 0 0 0 1.97-.54 6.9 6.9 0 0 1-1.76 1.83z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <p class="quote__body">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
+                    <p class="quote__date">December 24, 2018</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Newsletter subscribe -->
+        <section class="newsletter" id="subscribe">
+            <div class="newsletter__inner">
+                <div class="newsletter__art" aria-hidden="true"></div>
+                <div class="newsletter__content">
+                    <div class="newsletter__copy">
+                        <p class="newsletter__label">Want to stay in touch?</p>
+                        <h2 class="newsletter__title">Newsletter subscribe</h2>
+                        <p class="newsletter__text">In order to start receiving our news, all you have to do is enter
+                            your email address. Everything else will be taken care of by us. We will send you emails
+                            containing information about game. We don't spam.</p>
+                    </div>
+                    <form class="newsletter__form" novalidate>
+                        <div class="newsletter__field">
+                            <label class="newsletter__caption" for="newsletter-email">Your email address</label>
+                            <input class="newsletter__input" type="email" id="newsletter-email" name="email"
+                                   placeholder="your@email.com" autocomplete="email" required>
+                        </div>
+                        <button class="newsletter__btn" type="submit">Subscribe now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__top">
+                <a href="#" class="footer__logo" aria-label="SOS">
+                    <img class="footer__logo-img" src="images-icons/footer/logo.png" alt="SOS">
+                </a>
+
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <a href="#" class="footer__nav-link">MAIN</a>
+                    <a href="#" class="footer__nav-link">ABOUT</a>
+                    <a href="#" class="footer__nav-link">GAME FEATURES</a>
+                    <a href="#" class="footer__nav-link">SYSTEM REQUIREMENTS</a>
+                    <a href="#" class="footer__nav-link">QUOTES</a>
+                </nav>
+
+                <div class="footer__socials" aria-label="Our socials">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <img src="images-icons/footer/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Twitter">
+                        <img src="images-icons/footer/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube">
+                        <img src="images-icons/footer/Vector.svg" alt="YouTube">
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Twitch">
+                        <img src="images-icons/footer/twitch.svg" alt="Twitch">
+                    </a>
+                </div>
+            </div>
+
+            <hr class="footer__divider" role="separator">
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2018 Outpost Games, Inc. All Rights Reserved</p>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">PRIVACY POLICY</a>
+                    <span class="footer__legal-sep" aria-hidden="true">|</span>
+                    <a href="#" class="footer__legal-link">TERMS OF SERVICES</a>
+                    <span class="footer__legal-sep" aria-hidden="true">|</span>
+                    <a href="#" class="footer__legal-link">CODE OF CONDUCT</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+
+</html>
